@@ -168,7 +168,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 // --- 7. Google Sheets Backend Automation Forms API Pipeline ---
-// IMPORTANT: Replace this macro string with your actual deployed Google Web App URL
 const GOOGLE_SCRIPT_WEBAPP_URL =
   "https://script.google.com/macros/s/AKfycbzKnS2GC6iQMdH_7SeJ-MxXu-tlxOH0CikKxK7Bt0ACVZbxbd6uq1oIO-Yq8P1FNFrp/exec";
 
