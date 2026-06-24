@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editkaro.in | Professional Video Editing Agency</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">Editkaro<span>.in</span></div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portfolio">Our Work</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact" class="btn-primary">Hire Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header id="home" class="hero">
+      <div class="hero-content">
+        <h1>Elevate Your Visual Storytelling</h1>
+        <p>
+          Premium Social Media Marketing & Video Editing Agency. From fast-paced
+          short-form content to cinematic documentaries, we bring your vision to life.
+        </p>
+        <a href="#portfolio" class="btn-outline">View Portfolio <i class="fas fa-arrow-down"></i></a>
+      </div>
+    </header>
+
+    <section class="newsletter-section">
+      <div class="container small-container">
+        <h3>Get Viral Growth Strategies</h3>
+        <p>Subscribe to our newsletter for secret engagement frameworks and video trends.</p>
+        <form id="emailCollectorForm" class="newsletter-form">
+          <input type="email" name="email" placeholder="Enter your best email address" required />
+          <button type="submit" class="btn-primary">Subscribe</button>
+        </form>
+        <div id="newsletterStatus" class="form-status"></div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Masterpieces</h2>
+          <p>Explore our diverse range of editing styles and formats.</p>
+        </div>
+
+        <div class="filter-container">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="short-form">Short-Form</button>
+          <button class="filter-btn" data-filter="long-form">Long-Form</button>
+          <button class="filter-btn" data-filter="gaming">Gaming</button>
+          <button class="filter-btn" data-filter="football">Football Edits</button>
+          <button class="filter-btn" data-filter="ecommerce">eCommerce</button>
+          <button class="filter-btn" data-filter="documentary">Documentary</button>
+          <button class="filter-btn" data-filter="color-grading">Color Grading</button>
+          <button class="filter-btn" data-filter="anime">Anime</button>
+          <button class="filter-btn" data-filter="ads">Ads</button>
+        </div>
+
+        <div class="portfolio-grid" id="portfolioGrid"></div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>About Editkaro.in</h2>
+          <p>The machinery behind high-retention storytelling.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <h3>Our Mission & Vision</h3>
+            <p>Our mission is simple: To banish boring content from timelines everywhere. We blend meticulous pacing, behavioral psychology, and master-level post-production to help digital-first brands control attention and dominate modern distribution channels.</p>
+          </div>
+          <div class="team-container">
+            <h3>Meet the Crew</h3>
+            <div class="team-grid">
+              <div class="team-card">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Team Lead">
+                <h4>Alex </h4>
+                <p>Chief Editor</p>
+              </div>
+              <div class="team-card">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Motion Designer">
+                <h4>Sam </h4>
+                <p>Lead Animator</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Let's Build Something Legendary</h2>
+          <p>Drop your details below and our production desk will get back to you within 12 hours.</p>
+        </div>
+        <div class="contact-wrapper">
+          <form id="contactForm" class="main-contact-form">
+            <div class="form-group-row">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Your Email Address" required />
+            </div>
+            <input type="tel" name="phone" placeholder="Phone Number (with country code)" required />
+            <textarea name="message" rows="5" placeholder="Tell us about your project or video requirements..." required></textarea>
+            <button type="submit" class="btn-primary form-submit-btn">Send Proposal Request</button>
+            <div id="contactStatus" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="copyright">&copy; 2026 Editkaro.in. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div class="modal" id="videoModal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="video-container" id="modalVideoContainer">
+          <iframe id="modalVideoIframe" width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
